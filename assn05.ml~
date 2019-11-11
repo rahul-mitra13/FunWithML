@@ -37,6 +37,6 @@ case L of
           
 (*testing of removei*)
 removei([1,2,3,4],1);
-
-
+removei([1,2,3,4,5,6,7],7);
+removei([1,2],1);
 
