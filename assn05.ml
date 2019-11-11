@@ -18,7 +18,7 @@ dup([1,2,3]);
 dup([1,2,3,4]);
 dup([1,2]);
 
-(*definition of dot*)
+(*definition of dot()*)
 fun dot(L1, L2) = 
 if null L1 then 0.0
 else (hd L1 * hd L2) + dot(tl L1,tl L2);
@@ -26,4 +26,6 @@ else (hd L1 * hd L2) + dot(tl L1,tl L2);
 (*testing of dot*)
 dot([1.0,2.0,3.0],[1.0,1.0,1.0]);
 dot([1.0, 2.0, 3.0], [4.0, 5.0, 6.0]);
-dot([7.0,8.0,9.0],[10.0,11.0,12.0])
+dot([7.0,8.0,9.0],[10.0,11.0,12.0]);
+
+
