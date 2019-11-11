@@ -29,12 +29,11 @@ dot([1.0, 2.0, 3.0], [4.0, 5.0, 6.0]);
 dot([7.0,8.0,9.0],[10.0,11.0,12.0]);
 
 (*definition of removei()*)
-fun removei(L,i) =
+fun removei(L, i) =
 case L of 
 [] => []
-| xs::ys => if i = xs then removei(ys, i)
-          else xs::removei(ys, i);
-          
+| xs::ys => if i = xs then removei(L,i)
+          else xs::removei(L,i);
 (*testing of removei*)
 removei([1,2,3,4],1);
 
