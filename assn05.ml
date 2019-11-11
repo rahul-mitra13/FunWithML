@@ -40,3 +40,13 @@ removei([1,2,3,4],1);
 removei([1,2,3,4,5,6,7],7);
 removei([1,2],1);
 
+(*definition of istri()*)
+fun istri(a: real,b: real,c: real) = 
+if (a + b > c) andalso (a + c > b) andalso (b + c > a) then true
+else false;
+
+(*testing of istri()*)
+istri(1.0,1.0,1.0);
+istri(1.0,2.0,1.0);
+istri(2.0,5.0,6.0);
+
